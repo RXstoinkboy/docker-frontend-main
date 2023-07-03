@@ -6,12 +6,6 @@ pipeline {
     }
 
     stages {
-        // stage('Checkout') {
-        //     steps {
-        //         git branch: 'main', url: 'https://github.com/RXstoinkboy/docker-frontend-main.git'
-        //     }
-        // }
-        
         stage('Build') {
             steps {
                 nodejs('NodeJS 20.3.1') {
